@@ -2,10 +2,10 @@
 array = []
 
 //creo condizione per funzione timing
-setTimeout(functionScomparire, 10000)
+setTimeout(functionScomparire, 8000)
 
 //creo condizione per funzione prompt
-setTimeout(functionprompt, 2000)
+setTimeout(functionPrompt, 11000)
 
 
 //creo un ciclo for
@@ -21,10 +21,30 @@ for ( i = 0; i < 5; i++){
 
 console.log(array)
 
+//array per inserire numeri ricordati
+arrayRicordati = []
+
 //funzione per far scomparire i numeri
 function functionScomparire(){
 
     document.getElementById(`outputNumeri`).style.display=`none`
+    
+}
 
+
+
+
+
+function functionPrompt(){
+
+    for(i = 0; i < 5; i++){
+
+        let numero = parseInt(prompt(`inerisci il primo numero`))
+        arrayRicordati.push(numero)
+
+    }
 
 }
+    console.log(arrayRicordati)
+
+
