@@ -4,6 +4,10 @@ array = []
 //creo condizione per funzione timing
 setTimeout(functionScomparire, 10000)
 
+//creo condizione per funzione prompt
+setTimeout(functionprompt, 2000)
+
+
 //creo un ciclo for
 for ( i = 0; i < 5; i++){
     
@@ -16,6 +20,8 @@ for ( i = 0; i < 5; i++){
 }
 
 console.log(array)
+
+//funzione per far scomparire i numeri
 function functionScomparire(){
 
     document.getElementById(`outputNumeri`).style.display=`none`
