@@ -8,6 +8,8 @@ for ( i = 0; i < 5; i++){
     numeroRandom = Math.floor(Math.random()* 100 ) + 1;
     //inserisco numeri random generati nell'array
     array.push(numeroRandom)
+    document.getElementById(`outputNumeri`).innerHTML = `${array}`
+
 }
 
 console.log(array)
