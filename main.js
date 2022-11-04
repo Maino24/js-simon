@@ -1,3 +1,61 @@
+let arrayNumeri = [];
+let arrayNumeriGiusti = [];
+let limiteNumeri = 5;
+let numeriRandomHtml = document.getElementById(`numeriRandomHtml`);
+let risultato = document.getElementById(`risultato`);
+
+
+function getRandomInt(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+while( arrayNumeri.length < limiteNumeri ){
+
+    arrayNumeri.push(getRandomInt(1, 100))
+
+}
+
+console.log(arrayNumeri);
+for (i=0; i < arrayNumeri.length i++){
+
+    numeriRanodmHtml.innerHtml += `<div class=`box`> ${arrayNumeri[i]} </div>`
+
+}
+
+
+
+setTimeout( function(){
+
+    numeriRandomHtml.style.display = `none`
+
+    //OPPURE numeriRanodmHtml.innerHTML = ``
+
+}, 3000);
+
+
+setTimeout( function(){
+    //chiedere numeri con i prompt
+    for( let y=0; y < 5; y++){
+
+        let numeroUtente = parseInt( promt(`scrivi un numero di quelli memorizzati`));
+        
+        if(arrayNumeri.includes(numeroUtente)){
+            //se la risposta è si pushare il numero in array secondario
+            arrayNumeriGiusti.push(numeroUtente); 
+        }
+
+
+    }
+
+    numeriRandomHtml.style.display= `flex`
+    risultato.innerHTML = `Il tuo punteggio è: ${arrayNumeriGiusti.length}, i numeri che hai azzeccato sono: ${(arrayNumeriGiusti)}`
+    console.log(arrayNumeriGiusti)
+}, 4000);
+
+
+
+
+/*
 //creo array vuoto
 array = []
 
@@ -43,8 +101,30 @@ function functionPrompt(){
         arrayRicordati.push(numero)
 
     }
+    console.log(arrayRicordati)
+}
+    
+
+
+numeriIndovinati = []
+
+if (array.includes(arrayRicordati[i])) {
+    
+    numeriIndovinati.push(arrayRicordati[i])
+    document.getElementById(`outputNumeriIndovinati`).innerHTML= `${numeriIndovinati}`
+}else{
 
 }
-    console.log(arrayRicordati)
+
+
+console.log(numeriIndovinati)
+
+*/
+
+
+CORREZIONE ESERCIZIO
+
+
+
 
 
