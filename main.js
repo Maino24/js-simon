@@ -16,9 +16,9 @@ while( arrayNumeri.length < limiteNumeri ){
 }
 
 console.log(arrayNumeri);
-for (i=0; i < arrayNumeri.length i++){
+for (i=0; i < arrayNumeri.length; i++){
 
-    numeriRanodmHtml.innerHtml += `<div class=`box`> ${arrayNumeri[i]} </div>`
+    numeriRandomHtml.innerHTML += `<div class="box">${arrayNumeri[i]}</div>`
 
 }
 
@@ -37,7 +37,7 @@ setTimeout( function(){
     //chiedere numeri con i prompt
     for( let y=0; y < 5; y++){
 
-        let numeroUtente = parseInt( promt(`scrivi un numero di quelli memorizzati`));
+        let numeroUtente = parseInt( prompt(`scrivi un numero di quelli memorizzati`));
         
         if(arrayNumeri.includes(numeroUtente)){
             //se la risposta è si pushare il numero in array secondario
@@ -48,7 +48,7 @@ setTimeout( function(){
     }
 
     numeriRandomHtml.style.display= `flex`
-    risultato.innerHTML = `Il tuo punteggio è: ${arrayNumeriGiusti.length}, i numeri che hai azzeccato sono: ${(arrayNumeriGiusti)}`
+    risultato.innerHTML = `Il tuo punteggio è: ${arrayNumeriGiusti.length}, i numeri che hai indovinato sono: ${(arrayNumeriGiusti)}`
     console.log(arrayNumeriGiusti)
 }, 4000);
 
@@ -122,7 +122,7 @@ console.log(numeriIndovinati)
 */
 
 
-CORREZIONE ESERCIZIO
+
 
 
 
